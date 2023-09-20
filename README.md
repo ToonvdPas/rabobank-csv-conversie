@@ -81,7 +81,7 @@ De wijze waarop Python en eventueel ontbrekende Python-modules geïnstalleerd mo
     ```
 5. **Laad de uitvoerbestanden in een spreadsheet (voorbeeld met Libreoffice Calc)**<br>
     a. Start Libreoffice Calc.<br>
-    b. Klik met de rechter muistoets in de balk met de spreadsheet-tabs en selecteer ```Insert sheet...```.<br>
+    b. Klik met de rechter muistoets in de balk met de spreadsheet-tabs en selecteer ```Insert sheet```.<br>
     c. Selecteer één van de aangemaakte CSV-bestanden met rekening-mutaties.<br>
         <img src="Files/Screenshot_Libreoffice_CSV_import_dialoog_1.png" alt="CSV import-dialoog 1" title="CSV import-dialoog 1" width="75%"/><br>
     d. Stel de import-parameters correct in.<br>Vergeet niet de optie "Evaluate formulas" aan te zetten!<br>
