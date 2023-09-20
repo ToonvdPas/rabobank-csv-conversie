@@ -38,6 +38,8 @@ Misschien volgt in de toekomst ook een op Windows georiënteerde uitleg.
 ## Vereisten
 Het programma is geschreven in Python, dus dat moet geïnstalleerd zijn op je machine.<br>
 Het maakt gebruik van diverse Python-modules, waarvan er één niet standaard aanwezig is op elke machine, namelijk ```chardet```.  Installeer deze module indien nodig.
+
+De wijze waarop Python en eventueel ontbrekende Python-modules geïnstalleerd moeten worden is afhankelijk van de gebruikte Linux-distributie, en beschrijven we hier dus niet.
 ## Installatie
 1. **Download of clone het project van Gitlab en pak het uit, bijvoorbeeld in ```/tmp```**
 2. **Plaats het programma ```'rabo_csv.py'``` in /usr/local/bin**
@@ -46,7 +48,6 @@ Het maakt gebruik van diverse Python-modules, waarvan er één niet standaard aa
     ```
 3. **Beveilig het progamma en maak het executable**
     ```
-    $ sudo chown root: /usr/local/bin/rabo_csv.py
     $ sudo chmod 0755 /usr/local/bin/rabo_csv.py
     ```
 4. **Maak een directory aan waarin je wilt gaan werken, bijvoorbeeld**
@@ -80,7 +81,7 @@ Het maakt gebruik van diverse Python-modules, waarvan er één niet standaard aa
     ```
 5. **Laad de uitvoerbestanden in een spreadsheet (voorbeeld met Libreoffice Calc)**<br>
     a. Start Libreoffice Calc.<br>
-    b. Klik met de rechter muistoets in de balk met de spreadsheet-tabs.<br>
+    b. Klik met de rechter muistoets in de balk met de spreadsheet-tabs en selecteer ```Insert sheet...```.<br>
     c. Selecteer één van de aangemaakte CSV-bestanden met rekening-mutaties.<br>
         <img src="Files/Screenshot_Libreoffice_CSV_import_dialoog_1.png" alt="CSV import-dialoog 1" title="CSV import-dialoog 1" width="75%"/><br>
     d. Stel de import-parameters correct in.<br>Vergeet niet de optie "Evaluate formulas" aan te zetten!<br>

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Doel:
 # Dit script leest een CSV-file van de Rabobank in en maakt hem klaar voor Excel.
@@ -217,7 +217,7 @@ except (OSError, IOError) as e:
     logmsg(LOG_ERROR, e)
     sys.exit(2)
 
-# Open the input files
+# Open the input files and read them into memory
 try:
     with open(args.matchfile, 'r', encoding=matchfile_encoding) as matchfile:
         matchreader = csv.DictReader(matchfile, delimiter=',', quotechar='"')
