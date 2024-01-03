@@ -148,7 +148,9 @@ def write_csv_file(csv_infile_dict_list, matchfile_dict_list, account_nr, outdir
 # Header layout from the Rabobank CSV:
 # ['IBAN/BBAN', 'Munt', 'BIC', 'Volgnr', 'Datum', 'Rentedatum', 'Bedrag', 'Saldo na trn', 'Tegenrekening IBAN/BBAN', 'Naam tegenpartij', 'Naam uiteindelijke partij', 'Naam initiërende partij', 'BIC tegenpartij', 'Code', 'Batch ID', 'Transactiereferentie', 'Machtigingskenmerk', 'Incassant ID', 'Betalingskenmerk', 'Omschrijving-1', 'Omschrijving-2', 'Omschrijving-3', 'Reden retour', 'Oorspr bedrag', 'Oorspr munt', 'Koers']
 
-locale.setlocale(locale.LC_ALL, locale.getlocale())
+# Rabobank is a Dutch bank and so the CSV follows the Dutch locale conventions.
+# Set the locale hardcoded to Dutch to prevent issues with system-level settings.
+locale.setlocale(locale.LC_ALL, 'nl_NL.UTF-8')
 
 LOG_DEBUG = 4
 LOG_INFO  = 3
