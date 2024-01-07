@@ -22,7 +22,7 @@ Het programma voert de volgende bewerkingen uit:
         * ```'Bedrag bij'``` en ```'Bedrag af'```<br>
       (de kolom ```'Bedrag'``` uit het invoerbestand wordt weggelaten in de uitvoerbestanden)
         * ```'Rubriek bij'``` en ```'Rubriek af'```
-    * Sorteert de uitvoer-records op ```'Rubriek'```, ```'Relatienaam'``` en ```'Nr'```.
+    * Sorteert de uitvoer-records op ```'Rubriek'```, ```Tegenrekening (IBAN)```, ```'Relatienaam'``` en ```'Nr'```.
     * Plaatst formules in de kolommen ```'Rubriek bij'``` en ```'Rubriek af'``` voor de berekening van de totalen per rubriek.
     * Schrijft per rekening een uitvoerbestand in CSV-formaat.
 

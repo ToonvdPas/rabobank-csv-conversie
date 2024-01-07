@@ -115,6 +115,7 @@ def write_csv_file(csv_infile_dict_list, matchfile_dict_list, account_nr, outdir
                 })
 
         csv_outfile_dict_list_sorted = sorted(csv_outfile_dict_list, key=operator.itemgetter('Rubriek',
+                                                                                             'Tegenrekening (IBAN)',
                                                                                              'Relatienaam',
                                                                                              'Nr'))
         this_row = 0
