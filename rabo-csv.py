@@ -65,11 +65,11 @@ def match_category(row, matchfile_dict_list):
             logmsg(LOG_ERROR, "Invalid regular expression in line " + str(line+1) + " of the matchfile: " + str(e))
             sys.exit(2)
 
-    logmsg(LOG_WARN, "No match on volgnummer " + '{0:>6}'.format(str(int(row['Volgnr']))) +
+    logmsg(LOG_WARN, "No match on row number " + '{0:>6}'.format(str(int(row['Volgnr']))) +
                                    ", tegenrekening: " +                 row['Tegenrekening IBAN/BBAN'] +
                                    ", bedrag: "        + '{0:>8}'.format(row['Bedrag']) +
-                                   ", tegenpartij '"   +                 row['Naam tegenpartij'] +
-                                  "', regarding '"     +                 row['Omschrijving-1'] + "'")
+                                   ", tegenpartij: '"  +                 row['Naam tegenpartij'] +
+                                  "', regarding: '"    +                 row['Omschrijving-1'] + "'")
     return ''
 
 
